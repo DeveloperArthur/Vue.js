@@ -1,0 +1,30 @@
+<script src="https://npmcdn.com/vue/dist/vue.js"></script>
+
+<div id="app">
+  <div class="demo" :style="[myStyle, {height:width+'px'}]"></div>
+  <hr>
+  <input type="text" v-model="width">
+</div>
+
+new Vue({
+	el: '#app',
+  data: {
+    width: 100
+  },
+  computed: {
+  	myStyle: function(){
+    	return{
+      	width: this.width+'px'
+      }
+    }
+  }
+});
+
+.demo{
+  width: 102px;
+  height: 100px;
+  background-color: gray;
+  display: inline-block;
+  margin: 10px;
+}
+
