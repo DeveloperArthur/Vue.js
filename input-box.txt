@@ -1,0 +1,37 @@
+<script src="https://npmcdn.com/vue/dist/vue.js"></script>
+
+<div id="app">
+  <div class="demo" :class="color"></div>
+  <hr>
+  <input type="text" v-model="color">
+</div>
+
+new Vue({
+	el: '#app',
+  data: {
+  	attachRed: false,
+    attachGreen: false,
+    attachBlue: false,
+    color: 'red'
+  }
+});
+
+.demo{
+  width: 102px;
+  height: 100px;
+  background-color: gray;
+  display: inline-block;
+  margin: 10px;
+}
+
+.red {
+  background-color: red;
+}
+
+.green{
+  background-color: green
+}
+
+.blue{
+  background-color: blue;
+}

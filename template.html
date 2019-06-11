@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<meta charset="utf-8">
+	<meta http-equiv="X-UA-Compatible" content="IExedge">
+	<title>VueJS</title>
+	<link rel="styleheet" href="">
+	<script src="vue.js"></script>
+</head>
+<body>
+	<teste></teste>
+	<arthur></arthur>
+	<hello></hello>
+	<script>
+
+		Vue.component('hello', {
+			template: '<h2>testando component</h2>'
+		});
+		
+		var v1 = new Vue({
+			el: 'arthur',
+			template: '<h1>minha tag funcionou</h1>',
+		});
+		var v2 = new Vue({
+			el: 'teste',
+			template: '<p>teste e segunda instancia</p>'
+		});
+
+		//declarando o elemento da tag
+		var v3 = new Vue({
+			el: 'hello'
+		});
+	</script>
+</body>
+</html>

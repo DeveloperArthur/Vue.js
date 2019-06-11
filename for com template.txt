@@ -1,0 +1,14 @@
+<script src="https://npmcdn.com/vue/dist/vue.js"></script>
+
+<div id="app">
+  <template v-for="(value, i) in array">
+  <h1>{{ value }} <spam>({{ i }})</spam> </h1>
+  </template>
+</div>
+
+new Vue({
+	el: '#app',
+  data: {
+    array: [1, 2, 3]
+  }
+});

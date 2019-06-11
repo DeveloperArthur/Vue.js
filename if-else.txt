@@ -1,0 +1,19 @@
+<script src="https://npmcdn.com/vue/dist/vue.js"></script>
+
+<div id="app">
+  <p v-if="show">estou dentro do if <span>tag spam</span></p>
+  <p v-else>ola eu sou o else</p>
+  <template v-if="show">
+    <h1>tag h1 template</h1>
+    <p>p do template</p>
+  </template>
+  <p>pzinho ultimo</p>
+  <button @click="show = !show">Switch</button> 
+</div>
+
+new Vue({
+	el: '#app',
+  data: {
+    show: true
+  }
+});

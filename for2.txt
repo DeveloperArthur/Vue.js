@@ -1,0 +1,14 @@
+<script src="https://npmcdn.com/vue/dist/vue.js"></script>
+
+<div id="app">
+  <ul>
+    <li v-for="(value, i) in array">{{ value }} ({{ i }})</li>
+  </ul>
+</div>
+
+new Vue({
+	el: '#app',
+  data: {
+    array: [1, 2, 3]
+  }
+});
